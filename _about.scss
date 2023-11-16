@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5vh 23vh 30vh 15vh;
+    color: red;
     
     &__text{
         &--head{
@@ -25,7 +26,7 @@
          &--button{
             text-decoration: none;
             margin-right: 20px;
-            color: black;
+            color: red;
         } 
         &--arrow{
            max-height: 20px;

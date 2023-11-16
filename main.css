@@ -127,6 +127,7 @@ nav{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5vh 23vh 30vh 15vh;
+  color: red;
 }
 .about__text--head {
   grid-row: 2/3;
@@ -144,7 +145,7 @@ nav{
 .about__text--button {
   text-decoration: none;
   margin-right: 20px;
-  color: black;
+  color: red;
 }
 .about__text--arrow {
   max-height: 20px;
@@ -164,7 +165,6 @@ nav{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: white;
 }
 
 .contact {

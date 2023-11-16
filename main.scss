@@ -2,12 +2,13 @@
 @use "./navigation";
 @use "./components";
 @use "./about";
+@use "./skills";
 
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: $color-primary;
+   // background-color: black;
 }
 
 .contact{
