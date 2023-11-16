@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   background-color: yellow;
   color: black;
-  text-align: left;
   align-content: center;
   padding-left: 20px;
   text-decoration: none;
@@ -124,16 +123,41 @@ nav{
 .about {
   margin-top: 100px;
   padding: 20px;
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: auto;
-  padding-bottom: 30px;
+  grid-template-rows: 5vh 23vh 30vh 15vh;
+}
+.about__text--head {
+  grid-row: 2/3;
+}
+.about__text--body {
+  grid-row: 3/4;
+}
+.about__text--cta {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about__text--button {
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+}
+.about__text--arrow {
+  max-height: 20px;
+  max-width: 20px;
 }
 .about__image {
-  grid-area: 1/2/4/5;
-  max-height: 50%;
-  margin-left: 20px;
+  display: flex;
+  grid-row: 1/5;
+  max-height: 90%;
+  max-width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 * {

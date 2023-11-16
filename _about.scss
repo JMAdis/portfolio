@@ -3,14 +3,43 @@
 .about{
     margin-top: 100px;
     padding: 20px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 30px 30px;
-    padding-bottom: 30px;
+    grid-template-rows: 5vh 23vh 30vh 15vh;
     
+    &__text{
+        &--head{
+            grid-row: 2 / 3;
+        }
+        &--body{
+            grid-row: 3 / 4;
+        }
+        &--cta{
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+         &--button{
+            text-decoration: none;
+            margin-right: 20px;
+            color: black;
+        } 
+        &--arrow{
+           max-height: 20px;
+           max-width: 20px;
+        }
+    }
+
     &__image{
-        grid-area: 1 / 2 / 4 / 5;
-        max-height: 50%;
-        margin-left: 20px;
+        display: flex;
+        grid-row: 1 / 5;
+        max-height: 90%;
+        max-width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
