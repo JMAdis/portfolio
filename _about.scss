@@ -1,12 +1,11 @@
 @use "./variables" as *;
 
 .about{
-    margin-top: 100px;
-    padding: 20px;
+    margin: 100px;
     padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 23vh 30vh 15vh;
+    grid-template-rows: 5vh 23vh 30vh 5vh;
     color: red;
     
     &__text{
