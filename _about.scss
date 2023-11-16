@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+.about{
+    margin-top: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+    padding-bottom: 30px;
+    
+    &__image{
+        grid-area: 1 / 2 / 4 / 5;
+        max-height: 50%;
+        margin-left: 20px;
+
+    }
+}

@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.about{
+    margin-top: 100px;
+    background-color:$color-primary;
+    color: $color-black;
+    padding-bottom: 30px;
+}
+.skills{
+    background-color:$color-primary;
+    color: $color-black;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+.portfolio{
+    background-color:$color-primary;
+    color: $color-black;
+    margin: 10px;
+    padding-bottom: 30px;
+}
+.cv{
+    background-color:$color-primary;
+    color: $color-black;
+    margin: 10px;
+    padding-bottom: 30px;
+}

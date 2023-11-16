@@ -1,0 +1,102 @@
+@use "./variables" as *;
+
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 10vh;
+    
+    &__left{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: yellow;
+        color: black;
+        text-align: left;
+        align-content: center;
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    } 
+    
+    &__right{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: yellow;
+        color: black;
+        text-align: right;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    } 
+    a{
+        background-color: yellow;
+        text-decoration: none;
+
+        --cta{
+            border: solid 20px green;
+        }
+    }
+
+}
+    
+    /*
+    display: flex;
+    background-color: yellow;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__left {;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    &__right {
+        margin-left:auto;
+        justify-content: space-between;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+    a{
+        background-color: yellow;
+        text-decoration: none;
+    }
+}
+/*
+/*
+nav{
+    display: flex;
+    background-color: yellow;
+    color: $color-black;
+    text-decoration: none;
+    overflow: hidden;
+    
+    &__buttons{
+        display: flex;
+        float: right;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 10rem;
+        color: black;
+
+        /*
+        width: 50%;
+        float: right;
+        margin: 15px;
+        color: $color-black;
+        text-decoration: none;
+        justify-content: space-evenly;
+        
+        &&--cta{
+            border: solid 2 px;
+            text-decoration: none;
+        }
+        */
+
