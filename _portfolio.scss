@@ -1,5 +1,38 @@
 @use "./variables" as *;
+.portfolio{
+    margin: 20px;
+    color: red;
+    padding-top: 20px;
+    
+    &__nav--right{
+        margin: 10px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: red;
+        margin-right: 25px;
+    }
+    a:active, a:hover{
+        color: green;
+        font-weight: bold;
+    }    
+}
 
+.project{
+    display: grid;
+    justify-content: center;
+    background-color: yellow;
+
+    &__image{
+        margin: 5px;
+        max-height: 30vh;
+    }
+
+}
+
+
+@media screen and (min-width: $tablet-breakpoint) { 
 .portfolio__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,4 +62,5 @@
         text-decoration: none;
         color: red;
     }
+}
 }
