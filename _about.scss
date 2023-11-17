@@ -1,6 +1,42 @@
 @use "./variables" as *;
 
 .about{
+    margin: 20px;
+    color: red;
+
+    &__image{
+        display: none;
+    }
+
+    &__text{
+        &--head{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &--body{
+            margin-bottom: 50px;
+        }
+        &--cta{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        &--scroll{
+            text-decoration: none;
+            margin-right: 20px;
+            color: red;
+        } 
+        &--arrow{
+           max-height: 20px;
+           max-width: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-breakpoint) { 
+.about{
     margin: 100px;
     padding-bottom: 30px;
     display: grid;
@@ -22,7 +58,7 @@
             justify-content: flex-start;
             align-items: center;
         }
-         &--button{
+         &--scroll{
             text-decoration: none;
             margin-right: 20px;
             color: red;
@@ -42,4 +78,5 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+}
 }
