@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  padding: 20px;
   background-color: yellow;
   color: black;
 }
@@ -37,9 +37,6 @@
   display: block;
 }
 
-/*&__right{
-    display: none;
-}*/
 @media screen and (min-width: 768px) {
   .navigation {
     display: grid;
