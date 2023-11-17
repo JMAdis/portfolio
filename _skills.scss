@@ -9,6 +9,14 @@
     &__title, &__text{
         padding-bottom: 30px;
     }
+    &__all{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__springboot{
+        grid-column: 1 / 3;
+    }
 }
 
 @media screen and (min-width: $tablet-breakpoint) { 

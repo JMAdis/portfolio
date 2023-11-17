@@ -241,6 +241,14 @@ nav{
 .skills__title, .skills__text {
   padding-bottom: 30px;
 }
+.skills__all {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.skills__springboot {
+  grid-column: 1/3;
+}
 
 @media screen and (min-width: 768px) {
   .skills {
