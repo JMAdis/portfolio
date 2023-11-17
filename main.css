@@ -1,39 +1,82 @@
 .navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background-color: yellow;
+  color: black;
 }
 .navigation__left {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
   color: black;
-  align-content: center;
-  padding-left: 20px;
   text-decoration: none;
-  font-size: 20px;
+}
+.navigation__dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  border: 0;
+  margin-left: auto;
 }
 .navigation__right {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: yellow;
+  position: relative;
+  display: inline-block;
+}
+.navigation__right--content {
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  z-index: 1;
+}
+.navigation__right--content a {
   color: black;
-  text-align: right;
-  justify-content: space-evenly;
-  padding-left: 20px;
+  padding: 12px 16px;
   text-decoration: none;
-  font-size: 20px;
+  display: block;
 }
-.navigation a {
-  background-color: yellow;
-  text-decoration: none;
-}
-.navigation a --cta {
-  border: solid 20px green;
+.navigation .navigation__right:hover .navigation__right--content {
+  display: block;
 }
 
+/*&__right{
+    display: none;
+}*/
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 10vh;
+  }
+  .navigation__left {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+    color: black;
+    align-content: center;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navigation__right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+    text-align: right;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .navigation a {
+    background-color: yellow;
+    text-decoration: none;
+  }
+  .navigation a --cta {
+    border: solid 20px green;
+  }
+}
 /*
     display: flex;
     background-color: yellow;
