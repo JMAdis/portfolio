@@ -1,6 +1,23 @@
 @use "./variables" as *;
 
-.about{
+.cv{
     margin: 20px;
     color: red;
+
+    &__top{
+        margin-bottom: 20px;
+    }
+    &__image-container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+    &__image{
+        max-height: 40vh;
+    }
+    &__bottom{
+        margin-bottom: 20px;
+    }
 }

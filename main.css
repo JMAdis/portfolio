@@ -359,9 +359,25 @@ nav{
     color: red;
   }
 }
-.about {
+.cv {
   margin: 20px;
   color: red;
+}
+.cv__top {
+  margin-bottom: 20px;
+}
+.cv__image-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  max-height: auto;
+  margin-bottom: 20px;
+}
+.cv__image {
+  max-height: 40vh;
+}
+.cv__bottom {
+  margin-bottom: 20px;
 }
 
 * {
