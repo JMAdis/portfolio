@@ -4,33 +4,61 @@
     color: red;
     padding-top: 20px;
     
-    &__nav--right{
+    &__navright{
         margin: 10px;
-    }
     
-    a{
+    &--btn{
         text-decoration: none;
         color: red;
         margin-right: 25px;
     }
-    a:active, a:hover{
+    &--btn:active, &--btn:hover{
         color: green;
         font-weight: bold;
     }    
+}
 }
 
 .project{
     display: grid;
     justify-content: center;
     background-color: yellow;
+    padding-top: 10px;
 
     &__image{
         margin: 5px;
         max-height: 30vh;
     }
 
+    &__title{
+        color: purple;
+        font-size: 20px;
+    }
+
+    &__skills{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        &--category{
+            background-color: lightgrey;
+            color: grey;
+            font-size: 10px;
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 15%;
+            text-decoration: none;
+        }
+    }
+
+}
+.project2{
+    display: none;
 }
 
+.project3{
+    display: none;
+}
 
 @media screen and (min-width: $tablet-breakpoint) { 
 .portfolio__nav {

@@ -280,15 +280,15 @@ nav{
   color: red;
   padding-top: 20px;
 }
-.portfolio__nav--right {
+.portfolio__navright {
   margin: 10px;
 }
-.portfolio a {
+.portfolio__navright--btn {
   text-decoration: none;
   color: red;
   margin-right: 25px;
 }
-.portfolio a:active, .portfolio a:hover {
+.portfolio__navright--btn:active, .portfolio__navright--btn:hover {
   color: green;
   font-weight: bold;
 }
@@ -297,10 +297,37 @@ nav{
   display: grid;
   justify-content: center;
   background-color: yellow;
+  padding-top: 10px;
 }
 .project__image {
   margin: 5px;
   max-height: 30vh;
+}
+.project__title {
+  color: purple;
+  font-size: 20px;
+}
+.project__skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.project__skills--category {
+  background-color: lightgrey;
+  color: grey;
+  font-size: 10px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 15%;
+  text-decoration: none;
+}
+
+.project2 {
+  display: none;
+}
+
+.project3 {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -332,6 +359,11 @@ nav{
     color: red;
   }
 }
+.about {
+  margin: 20px;
+  color: red;
+}
+
 * {
   margin: 0;
   padding: 0;
