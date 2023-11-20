@@ -24,7 +24,7 @@
 }
 }
 
-.project{
+.project1, .project2, .project3 {
     display: grid;
     justify-content: center;
     padding-top: 10px;
@@ -57,7 +57,6 @@
             text-decoration: none;
         }
     }
-
 }
 .project2{
     display: none;
@@ -67,8 +66,35 @@
     display: none;
 }
 
-@media screen and (min-width: $tablet-breakpoint) { 
-.portfolio__nav {
+@media screen and (min-width: 768px){ 
+.portfolio{
+    padding: 70px;
+
+    &__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 10vh;
+    }
+    &__navright{
+            display: flex;
+            justify-content: right;
+        }
+}
+.project2{
+    display: unset;
+}
+.project__half{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+}
+
+
+
+    
+    /*
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -99,3 +125,4 @@
     }
 }
 }
+*/

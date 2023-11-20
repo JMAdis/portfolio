@@ -206,28 +206,28 @@
   font-weight: bold;
 }
 
-.project {
+.project1, .project2, .project3 {
   display: grid;
   justify-content: center;
   padding-top: 10px;
 }
-.project__image {
+.project1__image, .project2__image, .project3__image {
   margin: 5px;
   max-height: 30vh;
 }
-.project__title {
+.project1__title, .project2__title, .project3__title {
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.project__skills {
+.project1__skills, .project2__skills, .project3__skills {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
   font-family: "Inter", sans-serif;
 }
-.project__skills--category {
+.project1__skills--category, .project2__skills--category, .project3__skills--category {
   background-color: darkgray;
   color: white;
   font-size: 10px;
@@ -246,34 +246,60 @@
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 70px;
+  }
   .portfolio__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 10vh;
   }
-  .portfolio__nav--left {
+  .portfolio__navright {
     display: flex;
-    flex-wrap: wrap;
-    color: red;
-    align-content: center;
-    padding-left: 20px;
-    text-decoration: none;
-    font-size: 20px;
+    justify-content: right;
   }
-  .portfolio__nav--right {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: right;
-    justify-content: space-evenly;
-    padding-left: 20px;
+  .project2 {
+    display: unset;
   }
-  .portfolio__nav a {
-    text-decoration: none;
-    color: red;
+  .project__half {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
+/*
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 10vh;
+
+    &--left{
+        display: flex;
+        flex-wrap: wrap;
+        color: red;
+        align-content: center;
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 20px;
+    } 
+
+    &--right{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: right;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        //font-size: 20px;
+    } 
+    a{
+        text-decoration: none;
+        color: red;
+    }
+}
+}
+*/
 .cv {
   padding: 20px;
   color: white;
