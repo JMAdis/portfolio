@@ -400,6 +400,10 @@ nav{
   margin-top: 20px;
 }
 
+.contact {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
