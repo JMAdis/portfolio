@@ -379,6 +379,26 @@ nav{
 .cv__bottom {
   margin-bottom: 20px;
 }
+.cv__bottom--subheading {
+  color: purple;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cv__bottom--role1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.cv__bottom--arrow {
+  max-height: 20px;
+  max-width: 20px;
+}
+.cv__bottom--date {
+  font-size: 10px;
+}
+.cv__bottom--body {
+  margin-top: 20px;
+}
 
 * {
   margin: 0;

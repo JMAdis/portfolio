@@ -19,5 +19,30 @@
     }
     &__bottom{
         margin-bottom: 20px;
+
+        &--subheading{
+            color: purple;
+            margin-top: 20px ;
+            margin-bottom: 20px;
+        }
+
+        &--role1{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        &--arrow{
+            max-height: 20px;
+            max-width: 20px;
+        }
+        &--date{
+            font-size: 10px;
+        }
+        &--body{
+            margin-top: 20px;
+        }
     }
+
+
+    
 }
