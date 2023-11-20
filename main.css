@@ -41,99 +41,22 @@
 
 @media screen and (min-width: 768px) {
   .navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 10vh;
-  }
-  .navigation__left {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(28, 26, 29);
-    color: black;
-    align-content: center;
-    padding-left: 20px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  .navigation__right {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 70px;
+    flex-direction: row;
     align-items: center;
-    background-color: yellow;
-    color: black;
-    text-align: right;
-    justify-content: space-evenly;
-    padding-left: 20px;
-    text-decoration: none;
-    font-size: 20px;
   }
-  .navigation a {
-    background-color: yellow;
-    text-decoration: none;
+  .navigation__right--content {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
   }
-  .navigation a --cta {
-    border: solid 20px green;
+  .navigation__right--content a {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid;
   }
 }
-/*
-    display: flex;
-    background-color: yellow;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    &__left {;
-        background-color: yellow;
-        color: black;
-        text-align: center;
-        padding: 5px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    &__right {
-        margin-left:auto;
-        justify-content: space-between;
-        background-color: yellow;
-        color: black;
-        text-align: center;
-        font-size: 20px;
-    }
-    a{
-        background-color: yellow;
-        text-decoration: none;
-    }
-}
-/*
-/*
-nav{
-    display: flex;
-    background-color: yellow;
-    color: $color-black;
-    text-decoration: none;
-    overflow: hidden;
-
-    &__buttons{
-        display: flex;
-        float: right;
-        text-align: center;
-        padding: 10px 10px;
-        text-decoration: none;
-        font-size: 10rem;
-        color: black;
-
-        /*
-        width: 50%;
-        float: right;
-        margin: 15px;
-        color: $color-black;
-        text-decoration: none;
-        justify-content: space-evenly;
-
-        &&--cta{
-            border: solid 2 px;
-            text-decoration: none;
-        }
-        */
 .about {
   padding: 20px;
   padding-bottom: 20vh;
@@ -155,7 +78,6 @@ nav{
   color: #D3FF56;
 }
 .about__text--body {
-  margin-bottom: 50px;
   font-family: "Inter", sans-serif;
   padding-bottom: 15vh;
 }
@@ -177,43 +99,23 @@ nav{
 
 @media screen and (min-width: 768px) {
   .about {
-    margin: 100px;
-    padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 23vh 30vh 5vh;
-    color: red;
-  }
-  .about__text--head {
-    grid-row: 2/3;
-  }
-  .about__text--body {
-    grid-row: 3/4;
-  }
-  .about__text--cta {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .about__text--scroll {
-    text-decoration: none;
-    margin-right: 20px;
-    color: red;
-  }
-  .about__text--arrow {
-    max-height: 20px;
-    max-width: 20px;
+    padding: 70px;
   }
   .about__image {
+    display: unset;
+  }
+  .about__imagecontainer {
     display: flex;
-    grid-row: 1/5;
-    max-height: 90%;
-    max-width: 80%;
-    margin: auto;
-    flex-wrap: wrap;
     justify-content: center;
+    height: 25vh;
+  }
+  .about__title {
+    padding-bottom: 30px;
+  }
+  .about__text--body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding-bottom: 65px;
   }
 }
 .skills {
