@@ -1,0 +1,8 @@
+@use "./variables" as *;
+
+footer {
+    background-color: $color-background-primary;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}

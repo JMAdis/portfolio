@@ -1,6 +1,5 @@
 @use "./variables" as *;
 @use "./navigation";
-@use "./components";
 @use "./about";
 @use "./skills";
 @use "./portfolio";
@@ -12,12 +11,9 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-   // background-color: black;
 }
 
 .contact{
-    background-color:$color-primary;
-    color: $color-black;
     margin: 10px;
     padding-bottom: 30px;
 }
