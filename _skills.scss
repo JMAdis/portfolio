@@ -1,16 +1,27 @@
 @use "./variables" as *;
 
 .skills{
-    margin: 20px;
-    color: red;
+    padding: 50px 20px 50px 20px;
+    color: $color-text-primary;
+    background-color: $color-background-primary;
     text-align: center;
-    padding-top: 20px;
+
+    &__title{
+        font-family: $title-font;
+        font-size: 30px;
+    }
+
+    &__text, &__all{
+        font-family: $body-font;
+    }
+    
 
     &__title, &__text{
         padding-bottom: 30px;
     }
     &__all{
         display: grid;
+        color: $color-text-secondary;
         gap: 20px;
         grid-template-columns: repeat(2, 1fr);
     }

@@ -1,19 +1,24 @@
 @use "./variables" as *;
 .portfolio{
-    margin: 20px;
-    color: red;
-    padding-top: 20px;
-    
+    padding: 50px 20px 50px 20px;
+    color: $color-text-primary;
+    background-image: linear-gradient(180deg, $color-background-secondary, $color-background-primary) ;
+    font-family: $title-font;
+    font-size: 30px;
+
     &__navright{
-        margin: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: $body-font;
+        font-size: 15px;
     
     &--btn{
         text-decoration: none;
-        color: red;
+        color:$color-text-primary;
         margin-right: 25px;
     }
     &--btn:active, &--btn:hover{
-        color: green;
+        color: $color-text-secondary;
         font-weight: bold;
     }    
 }
@@ -22,7 +27,6 @@
 .project{
     display: grid;
     justify-content: center;
-    background-color: yellow;
     padding-top: 10px;
 
     &__image{
@@ -31,22 +35,25 @@
     }
 
     &__title{
-        color: purple;
+        color: $color-text-primary;
+        font-family: $body-font;
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
     &__skills{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 30px;
+        font-family: $body-font;
 
         &--category{
-            background-color: lightgrey;
-            color: grey;
+            background-color: darkgray;
+            color: $color-text-primary;
             font-size: 10px;
-            padding: 5px;
+            padding: 5px 10px 5px 10px;
             margin-right: 10px;
-            border-radius: 15%;
+            border-radius: 5%;
             text-decoration: none;
         }
     }

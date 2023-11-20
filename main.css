@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300&display=swap");
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,7 @@
 .navigation__left {
   color: #D3FF56;
   text-decoration: none;
+  font-size: 30px;
 }
 .navigation__dropbtn {
   background-color: #D3FF56;
@@ -134,23 +136,28 @@ nav{
         */
 .about {
   padding: 20px;
+  padding-bottom: 20vh;
   color: white;
   background-color: rgb(28, 26, 29);
 }
 .about__image {
   display: none;
 }
-.about__text--head {
+.about__title {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10vh;
+  font-size: 30px;
+  font-family: "Cormorant Garamond", serif;
 }
-.about__text--head1 {
+.about__title--header1 {
   color: #D3FF56;
 }
 .about__text--body {
   margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 15vh;
 }
 .about__text--cta {
   display: flex;
@@ -159,8 +166,9 @@ nav{
 }
 .about__text--scroll {
   text-decoration: none;
+  font-family: "Inter", sans-serif;
   margin-right: 20px;
-  color: red;
+  color: white;
 }
 .about__text--arrow {
   max-height: 20px;
@@ -209,16 +217,24 @@ nav{
   }
 }
 .skills {
-  margin: 20px;
-  color: red;
+  padding: 50px 20px 50px 20px;
+  color: white;
+  background-color: rgb(28, 26, 29);
   text-align: center;
-  padding-top: 20px;
+}
+.skills__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+}
+.skills__text, .skills__all {
+  font-family: "Inter", sans-serif;
 }
 .skills__title, .skills__text {
   padding-bottom: 30px;
 }
 .skills__all {
   display: grid;
+  color: #D3FF56;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -252,27 +268,31 @@ nav{
   }
 }
 .portfolio {
-  margin: 20px;
-  color: red;
-  padding-top: 20px;
+  padding: 50px 20px 50px 20px;
+  color: white;
+  background-image: linear-gradient(180deg, rgb(42, 40, 53), rgb(28, 26, 29));
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
 }
 .portfolio__navright {
-  margin: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 .portfolio__navright--btn {
   text-decoration: none;
-  color: red;
+  color: white;
   margin-right: 25px;
 }
 .portfolio__navright--btn:active, .portfolio__navright--btn:hover {
-  color: green;
+  color: #D3FF56;
   font-weight: bold;
 }
 
 .project {
   display: grid;
   justify-content: center;
-  background-color: yellow;
   padding-top: 10px;
 }
 .project__image {
@@ -280,21 +300,24 @@ nav{
   max-height: 30vh;
 }
 .project__title {
-  color: purple;
+  color: white;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .project__skills {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  font-family: "Inter", sans-serif;
 }
 .project__skills--category {
-  background-color: lightgrey;
-  color: grey;
+  background-color: darkgray;
+  color: white;
   font-size: 10px;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   margin-right: 10px;
-  border-radius: 15%;
+  border-radius: 5%;
   text-decoration: none;
 }
 
@@ -336,11 +359,19 @@ nav{
   }
 }
 .cv {
-  margin: 20px;
-  color: red;
+  padding: 20px;
+  color: white;
+  background-color: rgb(28, 26, 29);
+}
+.cv__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  padding-bottom: 25px;
 }
 .cv__top {
   margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 .cv__image-container {
   display: flex;
@@ -354,9 +385,13 @@ nav{
 }
 .cv__bottom {
   margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 .cv__bottom--subheading {
-  color: purple;
+  color: #D3FF56;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -371,6 +406,7 @@ nav{
 }
 .cv__bottom--date {
   font-size: 10px;
+  margin-top: 5px;
 }
 .cv__bottom--body {
   margin-top: 20px;

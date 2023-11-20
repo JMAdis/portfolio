@@ -1,11 +1,20 @@
 @use "./variables" as *;
 
 .cv{
-    margin: 20px;
-    color: red;
+    padding: 20px;
+    color: $color-text-primary;
+    background-color: $color-background-primary;
+
+    &__title{
+        font-family: $title-font;
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
 
     &__top{
         margin-bottom: 20px;
+        font-family: $body-font;
+        font-size: 15px;
     }
     &__image-container{
         display: flex;
@@ -19,9 +28,13 @@
     }
     &__bottom{
         margin-bottom: 20px;
+        font-family: $body-font;
+        font-size: 15px;
 
         &--subheading{
-            color: purple;
+            color: $color-text-secondary;
+            font-family: $title-font;
+            font-size: 20px;
             margin-top: 20px ;
             margin-bottom: 20px;
         }
@@ -37,6 +50,7 @@
         }
         &--date{
             font-size: 10px;
+            margin-top: 5px;
         }
         &--body{
             margin-top: 20px;
