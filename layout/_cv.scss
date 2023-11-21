@@ -4,6 +4,7 @@
     padding: 20px;
     color: $color-text-primary;
     background-color: $color-background-primary;
+    font-family: $body-font;
 
     &__title{
         font-family: $title-font;
@@ -11,25 +12,25 @@
         padding-bottom: 25px;
     }
 
-    &__top{
+    &__grid{
         margin-bottom: 20px;
         font-family: $body-font;
         font-size: 15px;
-    }
-    &__image-container{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        max-height: auto;
-        margin-bottom: 20px;
-    }
-    &__image{
-        max-height: 40vh;
-    }
-    &__bottom{
-        margin-bottom: 20px;
-        font-family: $body-font;
-        font-size: 15px;
+    
+        &--intro{
+            padding-bottom: 25px;
+            font-size: 15px;
+        }
+
+        &--image-container{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            margin-bottom: 20px;
+        }
+        &--image{
+            max-height: 40vh;
+        }
 
         &--subheading{
             color: $color-text-secondary;
@@ -54,10 +55,11 @@
             margin-top: 5px;
         }
         &--body{
-            margin-top: 20px;
+            padding: 20px;
         }
-    }  
-}
+    }
+}  
+
 
 @media screen and (min-width: $tablet-breakpoint) {
     .cv{
@@ -69,18 +71,20 @@
             font-size: 40px;
         }
         
-        &__top{
-            flex: 1;
-            margin-right: 20px;
-        }
-        &__bottom{ 
-            flex: 2;
+        &__grid{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto;
+
+            &--image-container{
+                display: none;
+            }
+
+            &--intro, &--subheading, &--role1, &--date, &--body{
+                grid-column: 2 / 3;
+            }
         }
 
-        &__image-container{
-        display: none;
-        }
-        
         /*
 
         &__body, &__bottom{
