@@ -55,7 +55,7 @@
             margin-top: 5px;
         }
         &--body{
-            padding: 20px;
+            padding-left: 20px;
         }
     }
 }  
@@ -75,6 +75,7 @@
             display: grid;
             grid-template-columns: 1fr 2fr;
             grid-template-rows: auto;
+            margin-bottom: 0;
 
             &--image-container{
                 display: none;
@@ -84,17 +85,6 @@
                 grid-column: 2 / 3;
             }
         }
-
-        /*
-
-        &__body, &__bottom{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: right;
-        }
-*/
-
-
 }
 }  
 

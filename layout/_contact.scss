@@ -3,3 +3,43 @@
 .contact{
     display: none;
 }
+
+
+@media screen and (min-width: $tablet-breakpoint) {
+    .contact{    
+        display: block;
+        border: solid 70px $color-background-primary;
+        font-family: $body-font;
+        color: $color-text-primary;
+        font-size: 15px;
+        background-color: $color-background-secondary;
+        text-align: center;
+        
+        &__title{    
+            font-family: $body-font;
+            font-size: 40px;
+            margin-top: 50px;
+
+            &--highlight{
+                color: $color-text-secondary;
+            }
+        }
+        &__text{
+            padding: 30px;
+        }
+        &__cta{
+            background-color: $color-background-tertiary;
+            color: $color-text-secondary;
+            font-weight: bold;
+            font-family: $body-font;
+            height: 50px;
+            padding: 0px 20px 0px 20px;
+            border: 0;
+            border-radius: 50px;
+            margin-bottom: 50px;
+
+        }
+}
+    
+    
+}

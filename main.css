@@ -100,7 +100,7 @@
   font-size: 30px;
   font-family: "Cormorant Garamond", serif;
 }
-.about__title--header1 {
+.about__title--highlight {
   color: #D3FF56;
 }
 .about__text--body {
@@ -321,7 +321,7 @@
   margin-top: 5px;
 }
 .cv__grid--body {
-  padding: 20px;
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -329,14 +329,6 @@
     padding: 70px;
     display: flex;
     flex-direction: column;
-    /*
-
-            &__body, &__bottom{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: right;
-            }
-    */
   }
   .cv__title {
     font-size: 40px;
@@ -345,6 +337,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
+    margin-bottom: 0;
   }
   .cv__grid--image-container {
     display: none;
@@ -357,6 +350,39 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+    border: solid 70px rgb(28, 26, 29);
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(42, 40, 53);
+    text-align: center;
+  }
+  .contact__title {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .contact__title--highlight {
+    color: #D3FF56;
+  }
+  .contact__text {
+    padding: 30px;
+  }
+  .contact__cta {
+    background-color: rgb(71, 70, 80);
+    color: #D3FF56;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    border: 0;
+    border-radius: 50px;
+    margin-bottom: 50px;
+  }
+}
 footer {
   background-color: #D3FF56;
   font-size: 10px;
@@ -374,9 +400,4 @@ footer__right {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.contact {
-  margin: 10px;
-  padding-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
