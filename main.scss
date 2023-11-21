@@ -1,11 +1,11 @@
-@use "./variables" as *;
-@use "./navigation";
-@use "./about";
-@use "./skills";
-@use "./portfolio";
-@use "./cv";
-@use "./contact";
-@use "./_footer";
+@use "./_body.scss/variables" as *;
+@use "./_body.scss/navigation";
+@use "./_body.scss/about";
+@use "./_body.scss/skills";
+@use "./_body.scss/portfolio";
+@use "./_body.scss/cv";
+@use "./_body.scss/contact";
+@use "./_body.scss/_footer";
 
 *{
     margin:0;

@@ -1,4 +1,5 @@
 @use "./variables" as *;
+
 .portfolio{
     padding: 50px 20px 50px 20px;
     color: $color-text-primary;
@@ -66,7 +67,7 @@
     display: none;
 }
 
-@media screen and (min-width: 768px){ 
+@media screen and (min-width: $tablet-breakpoint),(max-width: $desktop-breakpoint){ 
 .portfolio{
     padding: 70px;
 
