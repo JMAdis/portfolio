@@ -126,7 +126,10 @@
 
 @media screen and (min-width: 768px) {
   .about {
-    padding: 70px;
+    border: solid 70px rgb(28, 26, 29);
+    background-color: rgb(42, 40, 53);
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .about__image {
     display: unset;
@@ -148,7 +151,6 @@
 @media screen and (min-width: 1024px) {
   .about {
     border: solid 100px rgb(28, 26, 29);
-    padding: unset;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;

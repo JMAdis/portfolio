@@ -46,8 +46,10 @@
 
 @media screen and (min-width: $tablet-breakpoint) { 
 .about{
-    padding: 70px;
-
+    border: solid 70px $color-background-primary;
+    background-color: $color-background-secondary;
+    padding-top: 30px;
+    padding-bottom: 30px;
     &__image{
         display: unset;
     }
@@ -73,7 +75,6 @@
 @media screen and (min-width: $desktop-breakpoint) { 
     .about{
     border: solid 100px $color-background-primary;
-    padding: unset;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
