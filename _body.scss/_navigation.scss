@@ -49,21 +49,26 @@
     flex-direction: row;
     align-items: center;
 
+    &__dropbtn{
+        display: none;
+    }
+
     &__right{
         &--content{
             position: static;
             display: flex;
             flex-direction: row;
-            width: 50%;
+            z-index: 0;
         }
         &--content a{
             display: flex;
             padding: 12px 0;
             border-bottom: 1px solid;
         }
-    }
 }
 }
-
-
+.navigation__right:hover .navigation__right--content {
+    display: unset;
+}
+}
 

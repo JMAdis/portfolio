@@ -5,7 +5,7 @@
     color: $color-text-primary;
     background-image: linear-gradient(180deg, $color-background-secondary, $color-background-primary) ;
     font-family: $title-font;
-    font-size: 30px;
+    font-size: 25px;
 
     &__navright{
         margin-top: 25px;
@@ -38,7 +38,7 @@
     &__title{
         color: $color-text-primary;
         font-family: $body-font;
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
@@ -67,7 +67,7 @@
     display: none;
 }
 
-@media screen and (min-width: $tablet-breakpoint),(max-width: $desktop-breakpoint){ 
+@media screen and (min-width: $tablet-breakpoint){ 
 .portfolio{
     padding: 70px;
 
