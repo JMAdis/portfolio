@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300&display=swap");
-.navigation {
+.navigationTab {
+  display: none;
+}
+
+.navigationMob {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,60 +11,76 @@
   background-color: rgb(28, 26, 29);
   color: #D3FF56;
 }
-.navigation__left {
+.navigationMob__left {
   color: #D3FF56;
   text-decoration: none;
   font-size: 30px;
 }
-.navigation__dropbtn {
+.navigationMob__dropbtn {
   background-color: #D3FF56;
   color: black;
   padding: 16px;
   border: 0;
   margin-left: auto;
 }
-.navigation__right {
+.navigationMob__right {
   position: relative;
   display: inline-block;
 }
-.navigation__right--content {
+.navigationMob__right--content {
   display: none;
   position: absolute;
   background-color: rgb(42, 40, 53);
   z-index: 1;
 }
-.navigation__right--content a {
+.navigationMob__right--content a {
   color: #D3FF56;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-.navigation .navigation__right:hover .navigation__right--content {
+.navigationMob .navigationMob__right:hover .navigationMob__right--content {
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .navigation {
-    padding: 70px;
-    flex-direction: row;
-    align-items: center;
-  }
-  .navigation__dropbtn {
+  .navigationMob {
     display: none;
   }
-  .navigation__right--content {
-    position: static;
+  .navigationTab {
     display: flex;
-    flex-direction: row;
-    z-index: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(28, 26, 29);
+    padding: 70px;
   }
-  .navigation__right--content a {
+  .navigationTab__left {
+    color: #D3FF56;
+    text-decoration: none;
+    font-size: 50px;
+  }
+  .navigationTab__dropbtn {
+    display: none;
+  }
+  .navigationTab__right--content {
     display: flex;
-    padding: 12px 0;
-    border-bottom: 1px solid;
+    align-items: flex-start;
   }
-  .navigation__right:hover .navigation__right--content {
-    display: unset;
+  .navigationTab__right--menu {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 20px;
+    border: solid rgb(28, 26, 29);
+  }
+  .navigationTab__right--cta {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 20px;
+    border: solid #D3FF56 3px;
+    color: #D3FF56;
   }
 }
 .about {
