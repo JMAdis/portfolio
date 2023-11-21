@@ -134,7 +134,7 @@
   .about__imagecontainer {
     display: flex;
     justify-content: center;
-    height: 25vh;
+    height: 300px;
   }
   .about__title {
     padding-bottom: 30px;
@@ -143,6 +143,38 @@
     font-family: "Inter", sans-serif;
     font-size: 18px;
     padding-bottom: 65px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    border: solid 100px rgb(28, 26, 29);
+    padding: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .about__title, .about__text {
+    padding-bottom: 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about__imagecontainer {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .about__text--cta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .about__text--scroll {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+  }
+  .about__text--arrow {
+    max-height: 20px;
+    max-width: 20px;
   }
 }
 .skills {

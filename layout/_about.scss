@@ -50,12 +50,11 @@
 
     &__image{
         display: unset;
-        
     }
     &__imagecontainer{
         display: flex;
         justify-content: center;
-        height: 25vh;
+        height: 300px;
     }
     &__title{
         padding-bottom: 30px;
@@ -65,6 +64,44 @@
             font-family: $body-font;
             font-size: 18px;
             padding-bottom: 65px;
+        }
+    }
+}
+}
+
+
+@media screen and (min-width: $desktop-breakpoint) { 
+    .about{
+    border: solid 100px $color-background-primary;
+    padding: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    &__title, &__text{
+        padding-bottom: 30px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    &__imagecontainer{
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+    
+    &__text{
+        &--cta{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+         &--scroll{
+            text-decoration: none;
+            margin-right: 20px;
+            color: $color-text-primary;
+        } 
+        &--arrow{
+           max-height: 20px;
+           max-width: 20px;
         }
     }
 }
