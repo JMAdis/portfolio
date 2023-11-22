@@ -25,21 +25,25 @@
             font-family: $body-font;
             padding-bottom: 15vh;
         }
-        &--cta{
+    }
+    &__cta{
             display: flex;
             justify-content: left;
             align-items: center;
-        }
+
         &--scroll{
             text-decoration: none;
             font-family: $body-font;
             margin-right: 20px;
             color: $color-text-primary;
         } 
+        &--button{
+            background-color: $color-background-secondary;
+            border: 0;
+        }
         &--arrow{
            max-height: 20px;
            max-width: 20px;
-           background-color: yellow;
         }
     }
 }
@@ -89,12 +93,11 @@
         grid-row: 1 / 4;
     }
     
-    &__text{
-        &--cta{
+    &__cta{
             display: flex;
             justify-content: flex-start;
             align-items: center;
-        }
+        
          &--scroll{
             text-decoration: none;
             margin-right: 20px;

@@ -8,31 +8,18 @@
   </head>
 
   <body>
-    <nav class="navigationMob">
-      <a class="navigationMob__left" href="#">JA</a>
-      <div class="navigationMob__right">
-        <button class="navigationMob__dropbtn">Dropdown</button>
-        <div class="navigationMob__right--content">
+    <nav class="navigation">
+      <a class="navigation__left" href="#">JA</a>
+      <div class="navigation__right">
+        <button class="navigation__dropbtn">Dropdown</button>
+        <div class="navigation__right--content">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#portfolio">Portfolio</a>
-          <a href="#" class="navigationMob__right--cta">Get in Touch</a>
+          <a href="#" class="navigation__right--cta">Get in Touch</a>
         </div>
       </div>
     </nav>
-
-    <nav class="navigationTab">
-      <a class="navigationTab__left" href="#">JA</a>
-      <div class="navigationTab__right">
-        <div class="navigationTab__right--content">
-          <a href="#" class="navigationTab__right--menu">Home</a>
-          <a href="#" class="navigationTab__right--menu">About</a>
-          <a href="#" class="navigationTab__right--menu">Portfolio</a>
-          <a href="#" class="navigationTab__right--cta">Get in Touch</a>
-        </div>
-      </div>
-    </nav>
-
     <main>
       <section class="about" id="about">
         <div class="about__imagecontainer">
@@ -54,18 +41,18 @@
           pariatur illum ullam deleniti libero fugit, officia reiciendis
           necessitatibus.
         </p>
-        <div class="about__text--cta">
-          <a href="#skills-scroll" class="about__text--scroll">Scroll Down</a>
-          <img
-            src="./components/arrow.png"
+        <div class="about__cta">
+          <a href="#skills-scroll" class="about__cta--scroll">Scroll Down</a>
+          <button class="about__cta--button" href="#skills-srcoll2"><img
+            src="./components/bi_arrow-down-circle.png"
             alt="arrow"
-            class="about__text--arrow"
-          />
+            class="about__cta--arrow"
+          /></button>
         </div>
       </section>
 
       <section class="skills">
-        <div class="skills__heading">
+        <div class="skills__heading" id="skills-scroll2">
         <h2 class="skills__title" id="skills-scroll">Skills</h2>
         <p class="skills__text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
