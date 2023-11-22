@@ -14,11 +14,15 @@
   font-size: 30px;
 }
 .navigation__dropbtn {
-  background-color: #D3FF56;
+  background-color: rgb(28, 26, 29);
   color: black;
   padding: 16px;
   border: 0;
   margin-left: auto;
+}
+.navigation__dropbtn--icon {
+  max-height: 30px;
+  max-width: 25px;
 }
 .navigation__right {
   position: relative;
