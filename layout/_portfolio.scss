@@ -25,30 +25,30 @@
 }
 }
 
-.project1, .project2, .project3 {
+.projectsgroup__proj1, .projectsgroup__proj2, .projectsgroup__proj3{ 
     display: grid;
     justify-content: center;
     padding-top: 10px;
 
-    &__image{
+    &--image{
         margin: 5px;
-        max-height: 30vh;
+        max-height: 60px;
     }
 
-    &__title{
+    &--title{
         color: $color-text-primary;
         font-family: $body-font;
         font-size: 30px;
         margin-bottom: 20px;
     }
 
-    &__skills{
+    &--skills{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 30px;
         font-family: $body-font;
-
-        &--category{
+    }
+    &--skillscat{
             background-color: darkgray;
             color: $color-text-primary;
             font-size: 10px;
@@ -56,14 +56,14 @@
             margin-right: 10px;
             border-radius: 5%;
             text-decoration: none;
-        }
     }
 }
-.project2{
+
+.projectsgroup__proj2{
     display: none;
 }
 
-.project3{
+.projectsgroup__proj3{
     display: none;
 }
 
@@ -74,7 +74,7 @@
     &__nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 100px;
         height: 10vh;
     }
     &__navright{
@@ -82,16 +82,73 @@
             justify-content: right;
         }
 }
-.project2{
-    display: unset;
+.projectsgroup{
+    &__half{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
 }
-.project__half{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    &__proj2{
+        display: grid;
 }
+}
+}
+@media screen and (min-width: $desktop-breakpoint) {
+    .portfolio{
+        &__nav--highlight{
+            color: $color-text-secondary;
+        }
+    }
+    .projectsgroup{
+    &__half{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__half2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__proj3{
+        display: grid;
+    }
+    }
 }
 
+/*
+@media screen and (min-width: $desktop-breakpoint) { 
+    .portfolio{
+        &__nav--highlight{
+            color: $color-text-secondary
+        }
+    }
+    .projectsgroup{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        &__half{
+            display: flex;
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+        }
+        &__proj1{
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+        }
+
+        &__proj3{
+            display: flex;
+            grid-row: 2 / 3;
+        }
 
 
+    }
+    .projectsgroup__proj1, .projectsgroup__proj2, .projectsgroup__proj3{ 
+        &--image{
+            margin: 5px;
+            max-height: 30px;
+        }
     
+}
+} 
+*/
