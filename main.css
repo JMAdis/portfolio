@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300&display=swap");
 .navigation {
   display: flex;
@@ -438,7 +439,6 @@
   background-color: rgb(28, 26, 29);
   color: white;
   font-family: "Inter", sans-serif;
-  cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
@@ -451,6 +451,15 @@
   display: none;
   overflow: hidden;
   background-color: rgb(42, 40, 53);
+}
+.cv__collapsible:after {
+  content: "➕";
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+.cv__collapsible.active:after {
+  content: "➖";
 }
 .cv__grid {
   margin-bottom: 20px;
