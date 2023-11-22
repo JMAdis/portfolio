@@ -11,6 +11,26 @@
         font-size: 30px;
         padding-bottom: 25px;
     }
+    &__collapsible{
+        background-color: $color-background-primary;
+        color: $color-text-primary;
+        font-family: $body-font;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+
+        &--content{
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: $color-background-secondary;
+        }
+    }
+
 
     &__grid{
         margin-bottom: 20px;
@@ -80,11 +100,18 @@
             &--image-container{
                 display: none;
             }
+            &--date{
+                margin-bottom: 20px;
+            }
+            &__body{
+                margin-bottom: 20px;
+            }
 
-            &--intro, &--subheading, &--role1, &--date, &--body{
+            &--intro, &--subheading, &--role1, &--roleinfo, &--date, &--body{
                 grid-column: 2 / 3;
             }
         }
+
 }
 }  
 

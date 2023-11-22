@@ -267,14 +267,8 @@
             />
           </div>
             <h3 class="cv__grid--subheading">Experience</h3>
-            <div class="cv__grid--role1">
-              <h4>Trainee Software Developer @ Nology</h4>
-              <img
-                src="./components/arrow2.png"
-                alt="arrow"
-                class="cv__grid--arrow"
-              />
-            </div>
+              <button type="button" class="cv__collapsible cv__grid--role1">Trainee Software Developer @ Nology<img src="./components/ant-design_caret-down-outlined.png" alt="triangle button"></button>
+            <div class="cv__collapsible--content cv__grid--roleinfo">
             <p class="cv__grid--date">Nov 23 - Present</p>
             <ul class="cv__grid--body">
               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
@@ -284,9 +278,25 @@
                 aliquid asperiores adipisci unde.
               </li>
             </ul>
-          </div>
+            </div>
         </div>
-      </section>
+        </section>
+        <script>
+          var coll = document.getElementsByClassName("cv__collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
 
       <section class="contact">
         <h2 class="contact__title">LET'S <span class="contact__title--highlight">WORK TOGETHER</span></h2>
