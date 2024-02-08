@@ -1,0 +1,35 @@
+@use "../../styles/variables" as *;
+
+.projectsgroup__proj1 {
+  display: grid;
+  justify-content: center;
+  padding-top: 10px;
+
+  &--image {
+    margin: 5px;
+    max-height: 60px;
+  }
+
+  &--title {
+    color: $color-text-primary;
+    font-family: $body-font;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &--skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-family: $body-font;
+  }
+  &--skillscat {
+    background-color: darkgray;
+    color: $color-text-primary;
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+  }
+}

@@ -12,10 +12,10 @@ const About = () => {
       </div>
       <header className="about__title">
         <h1>
-          Hi I'm Jess, 
-          <span className="about__title--highlight">
-             a Junior Software Developer based in the UK.
-          </span>
+          Hi I'm Jess,
+          <div className="about__title--highlight">
+            a Junior Software Developer based in the UK.
+          </div>
         </h1>
       </header>
       <p className="about__text--body">
