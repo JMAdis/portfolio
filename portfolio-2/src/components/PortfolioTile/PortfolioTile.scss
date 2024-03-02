@@ -1,30 +1,31 @@
 @use "../../styles/variables" as *;
 
-.projectsgroup__proj1 {
+.projects-group {
   display: grid;
-  justify-content: center;
+  justify-content: left;
   padding-top: 10px;
   border: solid red 1px;
+  margin: 1rem;
 
-  &--image {
+  &__image {
     margin: 5px;
     max-height: 60px;
   }
 
-  &--title {
+  &__title {
     color: $color-text-primary;
     font-family: $body-font;
     font-size: 30px;
     margin-bottom: 20px;
   }
 
-  &--skills {
+  &__skills {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
     font-family: $body-font;
   }
-  &--skillscat {
+  &__skills-cat {
     background-color: darkgray;
     color: $color-text-primary;
     font-size: 10px;
@@ -32,5 +33,17 @@
     margin-right: 10px;
     border-radius: 5%;
     text-decoration: none;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) { 
+  .projects-group{
+      padding: 10px;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) { 
+  .projects-group{
+      padding: 15px;
   }
 }

@@ -6,7 +6,6 @@ import PortfolioList from "./components/PortfolioList/PortfolioList";
 import { Projects } from "./data/ProjectInfo";
 
 const App = () => {
-
   return (
     <div>
       <Nav />

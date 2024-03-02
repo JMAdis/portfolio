@@ -8,7 +8,9 @@ type PortfolioListProps = {
 
 const PortfolioList = ({ projects }: PortfolioListProps) => {
   return (
-    <section className="projects">
+    <section>
+      <h2 className="projects__title">Take a look at my recent work:</h2>
+      <div className="projects">
       {projects.map((project) => (
         <PortfolioTile
           title={project.title}
@@ -19,6 +21,7 @@ const PortfolioList = ({ projects }: PortfolioListProps) => {
           img={project.img}
         />
       ))}
+      </div>
     </section>
   );
 };

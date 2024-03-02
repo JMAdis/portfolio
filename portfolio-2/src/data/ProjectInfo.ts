@@ -1,6 +1,6 @@
 export const Projects = [
   {
-    title: "Calculator",
+    title: "Calculator Project",
     primarylanguage: "JavaScript",
     secondarylanguage: "SCSS",
     repo: "https://github.com/JMAdis/calculator-project2",
@@ -16,14 +16,14 @@ export const Projects = [
     img: "tbc",
   },
   {
-    title: "Nology 'Client' Project",
+    title: "'Client' Project",
     primarylanguage: "TypeScript",
     secondarylanguage: "SCSS",
     repo: "https://github.com/nology-tech/verde-client-project",
     img: "tbc",
   },
   {
-    title: "Punk API",
+    title: "Punk API Project",
     primarylanguage: "TypeScript",
     secondarylanguage: "SCSS",
     repo: "https://github.com/JMAdis/punk-api",
@@ -34,6 +34,14 @@ export const Projects = [
     title: "Snap Game",
     primarylanguage: "Java",
     repo: "https://github.com/JMAdis/snap-project",
+    img: "tbc",
+  },
+  {
+    title: "Book Tracker",
+    primarylanguage: "TypeScript",
+    secondarylanguage: "Java",
+    repo: "https://github.com/JMAdis/fullstack-project",
+    link: "https://github.com/JMAdis/fullstack-project",
     img: "tbc",
   },
 ];

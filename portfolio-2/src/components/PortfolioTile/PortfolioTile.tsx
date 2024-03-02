@@ -18,14 +18,14 @@ const PortfolioTile = ({
   img,
 }: PortfolioTileProps) => {
   return (
-    <div className="projectsgroup__proj1">
-      <img src={img} alt={title} className="projectsgroup__proj1--image" />
-      <p className="projectsgroup__proj1--title">{title}</p>
-      <div className="projectsgroup__proj1--skills">
-        <a href="#" className="projectsgroup__proj1--skillscat">
+    <div className="projects-group">
+      <img src={img} alt={title} className="projects-group__image" />
+      <p className="projects-group__title">{title}</p>
+      <div className="projects-group__skills">
+        <a href="#" className="projects-group__skills-cat">
           {primarylanguage}
         </a>
-        <a href="#" className="projectsgroup__proj1--skillscat">
+        <a href="#" className="projects-group__skills-cat">
           {secondarylanguage}
         </a>
       </div>
