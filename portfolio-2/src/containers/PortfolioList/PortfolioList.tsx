@@ -1,6 +1,6 @@
 import "./PortfolioList.scss";
 import { ProjectInfoTypes } from "../../types/ProjectInfoTypes";
-import PortfolioTile from "../PortfolioTile/PortfolioTile";
+import PortfolioTile from "../../components/PortfolioTile/PortfolioTile";
 
 type PortfolioListProps = {
   projects: ProjectInfoTypes[];
