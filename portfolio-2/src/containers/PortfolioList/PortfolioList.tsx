@@ -8,7 +8,7 @@ type PortfolioListProps = {
 
 const PortfolioList = ({ projects }: PortfolioListProps) => {
   return (
-    <section>
+    <section className="projects-container">
       <h2 className="projects__title">Take a look at my recent work:</h2>
       <div className="projects">
       {projects.map((project) => (

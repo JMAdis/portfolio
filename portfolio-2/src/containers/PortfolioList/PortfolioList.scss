@@ -1,14 +1,16 @@
 @use "../../styles/variables" as *;
 
+.projects-container{
+    margin: 50px 20px 50px 20px;
+}
+
 .projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 50px 20px 50px 20px;
 
     &__title{
         font-family: $title-font;
         font-size: 40px;
         color: $color-text-primary;
-        margin: 50px;
     }
 }

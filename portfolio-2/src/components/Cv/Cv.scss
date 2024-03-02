@@ -1,0 +1,35 @@
+@use "../../styles/variables" as *;
+
+.cv{
+    margin: 50px 20px 50px 20px;
+    color: $color-text-primary;
+
+    &__title{
+        font-size: 40px;
+    }
+
+    &__intro{
+        font-family: $body-font;
+        padding-bottom: 10px;
+    }
+
+    &__subtitle{
+        color: $color-text-secondary;
+    }
+
+    &__collapsible{
+        transition-property: height;
+        overflow: hidden;
+        background-color:blue;
+    }
+
+    &__button{
+        background-color: transparent;
+        color: $color-text-primary;
+        border: none;
+        text-align: left;
+        margin: 10px;
+    }
+
+}
+

@@ -3,6 +3,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import PortfolioList from "./containers/PortfolioList/PortfolioList";
 import { Projects } from "./data/ProjectInfo";
+import Cv from "./components/Cv/Cv";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <About />
       <Skills />
       <PortfolioList projects={Projects} />
+      <Cv />
     </div>
   )
 }
