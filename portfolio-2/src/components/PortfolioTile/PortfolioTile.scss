@@ -1,15 +1,17 @@
 @use "../../styles/variables" as *;
 
 .projects-group {
-  display: grid;
-  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 10px;
-  border: solid red 1px;
+  border: solid grey 1px;
   margin: 1rem;
+  align-items: center;
 
   &__image {
-    margin: 5px;
-    max-height: 60px;
+    margin: auto;
+    height: 7rem;
   }
 
   &__title {

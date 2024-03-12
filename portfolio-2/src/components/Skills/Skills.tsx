@@ -17,9 +17,11 @@ const Skills = () => {
           Skills
         </h2>
         <p className="skills__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
-          harum necessitatibus suscipit! Labore tempora quae molestias facilis
-          dolor odit fugiat dolorum libero possimus.
+          Through the nology bootcamp, I've gained proficiency in HTML, CSS,
+          SCSS, JavaScript, TypeScript, React, Java, Spring Boot, Git, and
+          MySQL. Applying BEM principles for modular code, I've honed skills in
+          both front-end and back-end development, ensuring seamless
+          collaboration and delivering impactful solutions.{" "}
         </p>
       </div>
       <div className="skills__all">

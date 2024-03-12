@@ -1,3 +1,10 @@
+import calculator from "../assets/calculator.png"
+import punkapi from "../assets/punk-api.png"
+import ticketTracker from "../assets/ticket-tracker.png" 
+import bookTracker from "../assets/book-tracker.png"
+import clientProject from "../assets/client-project.png"
+import weatherApp from "../assets/weather-app.png"
+
 export const Projects = [
   {
     title: "Calculator Project",
@@ -5,7 +12,7 @@ export const Projects = [
     secondarylanguage: "SCSS",
     repo: "https://github.com/JMAdis/calculator-project2",
     link: "https://jmadis.github.io/calculator-project2/",
-    img: "tbc",
+    img: `${calculator}`,
   },
   {
     title: "Ticket Tracker",
@@ -13,14 +20,14 @@ export const Projects = [
     secondarylanguage: "SCSS",
     repo: "https://github.com/JMAdis/ticket-tracker",
     link: "https://jmadis.github.io/ticket-tracker/",
-    img: "tbc",
+    img: `${ticketTracker}`,
   },
   {
     title: "'Client' Project",
     primarylanguage: "TypeScript",
     secondarylanguage: "SCSS",
     repo: "https://github.com/nology-tech/verde-client-project",
-    img: "tbc",
+    img: `${clientProject}`,
   },
   {
     title: "Punk API Project",
@@ -28,13 +35,15 @@ export const Projects = [
     secondarylanguage: "SCSS",
     repo: "https://github.com/JMAdis/punk-api",
     link: "https://jmadis.github.io/punk-api",
-    img: "tbc",
+    img: `${punkapi}`,
   },
   {
-    title: "Snap Game",
-    primarylanguage: "Java",
-    repo: "https://github.com/JMAdis/snap-project",
-    img: "tbc",
+    title: "Weather App",
+    primarylanguage: "TypeScript",
+    secondarylanguage: "SCSS",
+    repo: "https://github.com/JMAdis/weather-application",
+    link: "https://jmadis.github.io/weather-application/",
+    img: `${weatherApp}`,
   },
   {
     title: "Book Tracker",
@@ -42,6 +51,6 @@ export const Projects = [
     secondarylanguage: "Java",
     repo: "https://github.com/JMAdis/fullstack-project",
     link: "https://github.com/JMAdis/fullstack-project",
-    img: "tbc",
+    img: `${bookTracker}`,
   },
 ];

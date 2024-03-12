@@ -19,8 +19,12 @@ const PortfolioTile = ({
 }: PortfolioTileProps) => {
   return (
     <div className="projects-group">
+      <a href={link} target="_blank" >
       <img src={img} alt={title} className="projects-group__image" />
+      </a>
+      <a href={repo} target="_blank">
       <p className="projects-group__title">{title}</p>
+      </a>
       <div className="projects-group__skills">
         <a href="#" className="projects-group__skills-cat">
           {primarylanguage}

@@ -4,6 +4,7 @@ import Skills from "./components/Skills/Skills";
 import PortfolioList from "./containers/PortfolioList/PortfolioList";
 import { Projects } from "./data/ProjectInfo";
 import Cv from "./components/Cv/Cv";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Skills />
       <PortfolioList projects={Projects} />
       <Cv />
+      <Footer />
     </div>
   )
 }

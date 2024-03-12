@@ -1,11 +1,13 @@
 import "./About.scss";
+import headshot from "../../assets/headshot.jpg";
+import arrow from "../../assets/bi_arrow-down-circle.png"
 
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="about__imagecontainer">
         <img
-          src="./components/headshot-placeholder.png"
+          src={headshot}
           alt="headshot-placeholder"
           className="about__image"
         />
@@ -19,22 +21,20 @@ const About = () => {
         </h1>
       </header>
       <p className="about__text--body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-        sapiente ut et rem aliquid sint animi quo nobis, fuga dicta quos
-        pariatur illum ullam deleniti libero fugit, officia reiciendis
-        necessitatibus.
+        In pursuit of a career change, I embarked on a transformative journey at
+        nology's full-stack software development bootcamp. I found a new
+        direction that allows me to make a tangible impact and embrace my
+        passion for creativity.
       </p>
       <div className="about__cta">
         <a href="#skills-scroll" className="about__cta--scroll">
           Scroll Down
-        </a>
-        <button className="about__cta--button" href="#skills-srcoll2">
           <img
-            src="./components/bi_arrow-down-circle.png"
+            src={arrow}
             alt="arrow"
             className="about__cta--arrow"
           />
-        </button>
+          </a>
       </div>
     </section>
   );
